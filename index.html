@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram WebApp</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .button {
+      padding: 15px;
+      margin: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: #ffcc00;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #cc9900;
+    }
+  </style>
+</head>
+<body>
+    <h1 align="center">Osminog™</h1>
+  <div class="container">
+    <button class="button" onclick="changeColor(1)">Отчет 1</button>
+    <button class="button" onclick="changeColor(2)">Отчет 2</button>
+    <button class="button" onclick="changeColor(3)">Отчет 3</button>
+    <button class="button" onclick="changeColor(4)">Отчет 4</button>
+  </div>
+
+  <script>
+    function changeColor(buttonNumber) {
+      // Сбрасываем цвет у всех кнопок
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`button${i}`).style.backgroundColor = '#ffcc00';
+      }
+
+      // Устанавливаем цвет для выбранной кнопки
+      document.getElementById(`button${buttonNumber}`).style.backgroundColor = '#cc9900';
+    }
+  </script>
+
+</body>
+</html>
