@@ -16,9 +16,9 @@
     .container {
       display: flex;
       flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
       align-items: stretch;
-      height: 100vh;
-      justify-content: center;
       text-align: center;
     }
 
@@ -30,9 +30,9 @@
       cursor: pointer;
       border: none;
       outline: none;
-      color: #fff;
+      color: #000000;
       background-color: #ffcc00;
-      width: 100%;
+      border-radius: 8px;
     }
 
     .button:hover {
@@ -43,10 +43,10 @@
 <body>
     <h1 align="center">Osminog™</h1>
   <div class="container">
-    <button class="button" onclick="changeColor(1)">Отчет 1</button>
-    <button class="button" onclick="changeColor(2)">Отчет 2</button>
-    <button class="button" onclick="changeColor(3)">Отчет 3</button>
-    <button class="button" onclick="changeColor(4)">Отчет 4</button>
+    <button class="button" onclick="changeColor(1)">отчет рентабельности за год</button>
+    <button class="button" onclick="changeColor(2)">отчет за день переданных на оплату сделок</button>
+    <button class="button" onclick="changeColor(3)">отчет секретный</button>
+    <button class="button" onclick="changeColor(4)">отчет самый секретный</button>
   </div>
 
   <script>
