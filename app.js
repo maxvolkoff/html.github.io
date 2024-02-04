@@ -2,13 +2,11 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#FF00FF";
+let btns = document.querySelectorAll('[id^="btn"]');
 
-let btn = document.getElementById("btn");
-
-btn.addEventListener("click", function(){
-    // tg.MainButton.setText("Сообщение отправлено!");
-    // tg.MainButton.show();
-    tg.sendData("sendTestMessage");
+btns.forEach(btn => {
+    btn.addEventListener("click", function(){
+        // Ваш код для обработки события click
+        tg.sendData(btn.id);
+    });
 });
