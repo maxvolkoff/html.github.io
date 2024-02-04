@@ -66,6 +66,18 @@
       document.getElementById(`button${buttonNumber}`).style.backgroundColor = '#cc9900';
     }
   </script>
+  <script>
+      tg = window.Telegram.WebApp;
+      tg.expand();
+      let btn = document.getElementById("button")
 
+      btn.addEventListener("click", () => {
+        // let name = document.getElementById("").value;
+        let name = btn.value;
+        tg.SendDate(name)
+        tg.close();
+      });
+  </script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
