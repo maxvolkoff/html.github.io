@@ -48,7 +48,6 @@
 </head>
 <body>
     <img class="logo" src="Osminog-white-web.png" alt="Логотип">
-  <p1>1150</p1>
   <div class="container">
     <button id ="btn" class="button" onclick="changeColor(1)">отчет рентабельности за год</button>
     <button class="button" onclick="changeColor(2)">отчет за день переданных на оплату сделок</button>
@@ -62,7 +61,6 @@
       for (let i = 1; i <= 4; i++) {
         document.getElementById(`button${i}`).style.backgroundColor = '#ffcc00';
       }
-
       // Устанавливаем цвет для выбранной кнопки
       document.getElementById(`button${buttonNumber}`).style.backgroundColor = '#cc9900';
     }
@@ -70,12 +68,12 @@
   <script>
       tg = window.Telegram.WebApp;
       tg.expand();
-      let btn = document.getElementById("button")
+      let btn = document.getElementById("btn")
 
       btn.addEventListener("click", () => {
         // let name = document.getElementById("").value;
         // let name = btn.value;
-        tg.SendDate('sent somwe data')
+        tg.SendDate('sent some data')
         // tg.close();
       });
   </script>
