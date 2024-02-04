@@ -49,10 +49,10 @@
 <body>
     <img class="logo" src="Osminog-white-web.png" alt="Логотип">
   <div class="container">
-    <button id ="btn" class="button" onclick="changeColor(1)">отчет рентабельности за год</button>
-    <button class="button" onclick="changeColor(2)">отчет за день переданных на оплату сделок</button>
-    <button class="button" onclick="changeColor(3)">отчет секретный</button>
-    <button class="button" onclick="changeColor(4)">отчет самый секретный</button>
+    <button id ="btn" class="button">отчет рентабельности за год</button>
+    <button class="button">отчет за день переданных на оплату сделок</button>
+    <button class="button">отчет секретный</button>
+    <button class="button">отчет самый секретный</button>
   </div>
 
   <script>
@@ -65,18 +65,7 @@
       document.getElementById(`button${buttonNumber}`).style.backgroundColor = '#cc9900';
     }
   </script>
-  <script>
-      tg = window.Telegram.WebApp;
-      tg.expand();
-      let btn = document.getElementById("btn")
-
-      btn.addEventListener("click", () => {
-        // let name = document.getElementById("").value;
-        // let name = btn.value;
-        tg.SendDate('sent some data')
-        // tg.close();
-      });
-  </script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
