@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+      align-items: stretch;
+      text-align: center;
+    }
+
+    .button {
+      padding: 15px;
+      margin: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: #000000;
+      background-color: #ffcc00;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background-color: #cc9900;
+    }
+    .logo {
+      width: 90%;
+      max-width: 100%; /* Чтобы изображение не выходило за пределы контейнера */
+      padding: 30px;
+      display: block; margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+    <img class="logo" src="Osminog-white-web.png" alt="Логотип">
+  <div class="container">
+    <button id="btnCurrentProfitReport" class="button">Текущий месяц</button>
+    <button id="btnRangeProfitReport" class="button">Выбрать период</button>
+    <button id="btnIndex" class="button" onclick="redirectToIndex()">Вернуться назад</button>
+  </div>
+
+  <script>
+    function redirectToIndex() {
+      window.location.href = "index.html"; // Переход на другую страницу
+    }
+  </script>
+</body>
+</html>
