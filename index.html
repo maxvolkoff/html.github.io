@@ -49,23 +49,16 @@
 <body>
     <img class="logo" src="Osminog-white-web.png" alt="Логотип">
   <div class="container">
-    <button id ="btn1" class="button">Отчет рентабельности за год</button>
-    <button id ="btn2" class="button">Отчет по оплатам за неделю</button>
-    <button id ="btn3" class="button">Отчет по менеджерам</button>
-    <button id ="btn4" class="button">Отчет самый секретный</button>
+    <button id="btnProfitReport" class="button" onclick="redirectToProfitReport()">Отчет рентабельности</button>
+    <button id="btn2" class="button">Отчет по оплатам за неделю</button>
+    <button id="btn3" class="button">Отчет по менеджерам</button>
+    <button id="btn4" class="button">Отчет самый секретный</button>
   </div>
 
   <script>
-    function changeColor(buttonNumber) {
-      // Сбрасываем цвет у всех кнопок
-      for (let i = 1; i <= 4; i++) {
-        document.getElementById(`button${i}`).style.backgroundColor = '#ffcc00';
-      }
-      // Устанавливаем цвет для выбранной кнопки
-      document.getElementById(`button${buttonNumber}`).style.backgroundColor = '#cc9900';
+    function redirectToProfitReport() {
+      window.location.href = "profitreport.html"; // Переход на другую страницу
     }
   </script>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
